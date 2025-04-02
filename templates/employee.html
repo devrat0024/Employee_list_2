@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Portal</title>
+    <link rel="stylesheet" href="../static/employee.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Employee Portal</h2>
+
+        <!-- Login Form -->
+        <div id="login-section">
+            <h3>Enter Access Key</h3>
+            <input type="text" id="accessKey" placeholder="Enter Access Key">
+            <button onclick="loginEmployee()">Login</button>
+        </div>
+
+        <!-- Registration Form -->
+        <div id="register-section">
+            <h3>New Employee Registration</h3>
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="position" placeholder="Job Position">
+            <button onclick="registerEmployee()">Register</button>
+        </div>
+    </div>
+    <!-- Firebase UMD (For browser compatibility) -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+
+<!-- Load Your JavaScript After Firebase -->
+<script src="app.js"></script>
+</body>
+</html>
